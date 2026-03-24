@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Brian Barber | Barbearia em Dom Joaquim</title>
+
+  <meta property="og:title" content="Brian Barber - Barbearia em Dom Joaquim">
+  <meta property="og:description" content="Cortes modernos, barba e estilo. Agende agora!">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1585747860715-2ba37e788b70">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70') no-repeat center/cover;
+    }
+
+    .overlay {
+      background: rgba(0,0,0,0.8);
+      min-height: 100vh;
+      padding: 20px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    header {
+      padding: 40px 20px;
+    }
+
+    /* LOGO MODERNA */
+    .logo {
+      font-size: 50px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      background: linear-gradient(90deg, gold, orange, gold);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 3s linear infinite;
+    }
+
+    p {
+      color: #ccc;
+    }
+
+    .services {
+      margin-top: 30px;
+    }
+
+    .services p {
+      margin: 5px 0;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.15);
+      margin: 10px auto;
+      padding: 15px;
+      width: 260px;
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    /* BOTÃO TOP */
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      background: linear-gradient(45deg, gold, orange);
+      color: black;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* ANIMAÇÕES */
+    @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<header>
+  <h1 class="logo">✂ Brian Barber</h1>
+  <p>PRECISÃO, ESTILO E QUALIDADE EM CADA CORTE</p>
+</header>
+
+  <p>📍 Dom Joaquim</p>
+  <p>🕒 Atendimento: 09h às 20h</p>
+
+  <section class="services">
+  <h2>Serviços</h2>
+  
+  <div class="card">Social</div>
+<div class="card">Degradê</div>
+<div class="card">Barba</div>
+<div class="card">Pigmentação</div>
+<div class="card">Luzes</div>
+ 
+    <a class="btn" href="https://wa.me/5531982560088">
+    Agendar horário no WhatsApp
+  </a>
+</section>
+
+</div>
+
+</body>
+</html>
