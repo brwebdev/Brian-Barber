@@ -2,6 +2,8 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Brian Barber | Barbearia em Dom Joaquim</title>
 
   <meta property="og:title" content="Brian Barber - Barbearia em Dom Joaquim">
@@ -15,6 +17,7 @@
       color: white;
       text-align: center;
       background: url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70') no-repeat center/cover;
+      background-attachment: fixed;
     }
 
     .overlay {
@@ -28,7 +31,7 @@
       padding: 40px 20px;
     }
 
-    /* LOGO MODERNA */
+    /* LOGO */
     .logo {
       font-size: 50px;
       font-weight: bold;
@@ -45,34 +48,28 @@
       color: #ccc;
     }
 
+    /* SERVIÇOS */
     .services {
       margin-top: 30px;
     }
 
-    .services p {
-      margin: 5px 0;
-    }
-
-   .card {
-  background: rgba(255,255,255,0.15);
-  margin: 10px auto;
-  padding: 15px;
-  width: 90%;
-  max-width: 400px;
-  border-radius: 12px;
-  backdrop-filter: blur(6px);
-  transition: transform 0.3s;
-}
+    .card {
+      background: rgba(255,255,255,0.15);
+      margin: 10px auto;
+      padding: 15px;
+      width: 90%;
+      max-width: 400px;
       border-radius: 12px;
       backdrop-filter: blur(6px);
       transition: transform 0.3s;
+      font-size: 16px;
     }
 
     .card:hover {
       transform: scale(1.05);
     }
 
-    /* BOTÃO TOP */
+    /* BOTÃO */
     .btn {
       display: inline-block;
       margin-top: 30px;
@@ -100,6 +97,18 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
+    /* RESPONSIVO */
+    @media (max-width: 600px) {
+      .card {
+        font-size: 18px;
+        padding: 20px;
+      }
+
+      .logo {
+        font-size: 36px;
+      }
+    }
   </style>
 </head>
 
@@ -112,19 +121,19 @@
   <p>PRECISÃO, ESTILO E QUALIDADE EM CADA CORTE</p>
 </header>
 
-  <p>📍 Dom Joaquim</p>
-  <p>🕒 Atendimento: 09h às 20h</p>
+<p>📍 Dom Joaquim</p>
+<p>🕒 Atendimento: 09h às 20h</p>
 
-  <section class="services">
+<section class="services">
   <h2>Serviços</h2>
-  
+
   <div class="card">Social</div>
-<div class="card">Degradê</div>
-<div class="card">Barba</div>
-<div class="card">Pigmentação</div>
-<div class="card">Luzes</div>
- 
-    <a class="btn" href="https://wa.me/5531982560088">
+  <div class="card">Degradê</div>
+  <div class="card">Barba</div>
+  <div class="card">Pigmentação</div>
+  <div class="card">Luzes</div>
+
+  <a class="btn" href="https://wa.me/5531982560088" target="_blank">
     Agendar horário no WhatsApp
   </a>
 </section>
